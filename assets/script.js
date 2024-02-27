@@ -27,7 +27,7 @@ let textCarrousel = document.querySelector("#banner p");
 let nbSlides = slides.length;
 let index = 0;
 
-/* création des points */
+/* la fonction qui permet la création des points */ 
 
 function createDots() {
 	for (let i = 0; i < nbSlides; i++) {
@@ -63,7 +63,7 @@ flecheGauche.addEventListener("click", () => {
 	slide()
 })
 
-/* gerer le point dot_selected */
+/* la fonction qui permet de gerer le point dot_selected */
 
 function dotUpdate() {
 	let dotList = document.querySelectorAll(".dot");
@@ -79,7 +79,7 @@ function dotUpdate() {
 }
 dotUpdate()
 
-/* changer image et texte du carrousel */
+/* la fonction qui permet de changer l'image et le texte du carrousel */
 
 function slide () {
 	imgCarrousel.src = `./assets/images/slideshow/${slides[index].image}` 
